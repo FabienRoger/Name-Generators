@@ -23,54 +23,54 @@ The two word generating approaches are :
 
 Each network was trained for approximately 50 epochs.
 
-Results for first names generation :
-Random sample from the dataset : 
+Results for first names generation :  
+Random sample from the dataset :  
 roger, marie, victor, jocelyne, charlotte, laetitia, yassir, anthony, edgar, fernand
 
-First approach results, rnn :
-etrenne, chrone, scelle, uis, riste, vor, niel, inel, soch, xyve
-First approach results, rnn2 :
-ella, lesaule, iserie, rem, esmo, zettise, iso, elle, ylena, elline
-First approach results, rnn3 :
-ol, uil, angie, etie, ance, issohe, isstie, delene, elhind, annire
-First approach results, lstm :
-richan, andre, olivier, elio, ariano, arnandine, andon, henri, orien, olvine
+First approach results, rnn :  
+etrenne, chrone, scelle, uis, riste, vor, niel, inel, soch, xyve  
+First approach results, rnn2 :  
+ella, lesaule, iserie, rem, esmo, zettise, iso, elle, ylena, elline  
+First approach results, rnn3 :  
+ol, uil, angie, etie, ance, issohe, isstie, delene, elhind, annire  
+First approach results, lstm :  
+richan, andre, olivier, elio, ariano, arnandine, andon, henri, orien, olvine  
 
-Second approach results, rnn :
-lien, anie, uis, adie, ande, ystene, ristie, vilie, zele, andie (r=0.4)
-Second approach results, rnn2 :
-elline, delbrine, ise, alba, deride, iso, ista, delbrin, delben, alins (r=0.42)
-Second approach results, rnn3 :
-ine, ule, inetie, inettet, ya, ole, issain, yas, inette, uil (r=0.14)
-Second approach results, lstm :
-orienne, udy, arnand, odinette, odine, orien, regne, olivie, ande, orene (r=0.06)
+Second approach results, rnn :  
+lien, anie, uis, adie, ande, ystene, ristie, vilie, zele, andie (r=0.4)  
+Second approach results, rnn2 :  
+elline, delbrine, ise, alba, deride, iso, ista, delbrin, delben, alins (r=0.42)  
+Second approach results, rnn3 :  
+ine, ule, inetie, inettet, ya, ole, issain, yas, inette, uil (r=0.14)  
+Second approach results, lstm :  
+orienne, udy, arnand, odinette, odine, orien, regne, olivie, ande, orene (r=0.06)  
 
-Comments :
+Comments :  
 To a french speaker, the names produced by rnn, rnn2, and rnn3 are not very good. The one produced by lstm are original and pretty convincing, especially with the second approach. r is very low for rnn3 and lstm, meaning that the neural network produced mostly names already existing. This might be due to overfitting, but also to the fact that the number of names looking like names in french is quite small, and that therefore the network just learned what a french name looks like.
 
-Results for city names generation :
-Random sample from the dataset : 
-eaubonne, merlimont, cheroy, nernier, outremecourt, sainte-marie-aux-mines, laval-du-tarn, bray-sur-somme, pact, bresson
+Results for city names generation :  
+Random sample from the dataset :   
+eaubonne, merlimont, cheroy, nernier, outremecourt, sainte-marie-aux-mines, laval-du-tarn, bray-sur-somme, pact, bresson  
 
-First approach results, rnn :
-vanq, uds-hegret-aury, viru, nies-gncemex, , oury, , , nere, wien-er-rain
-First approach results, rnn2 :
-illes, lone, azeuil-en-ville-sur-beoux, ayses-palliers, auvilles, usxiain, ouzieres, usclers-sous-pors, urisg, ezles
-First approach results, rnn3 :
-reilly, azonnediere, eux-loubard, rectensenomarde, auance, iry-camille-dampeaux, rennay, uvantre, gnanches-debis, risind
-First approach results, lstm :
-doualde, menheilles, piernes, ullon, vigniec, udo, zelly, yelon, tailles, indoux
+First approach results, rnn :  
+vanq, uds-hegret-aury, viru, nies-gncemex, , oury, , , nere, wien-er-rain  
+First approach results, rnn2 :  
+illes, lone, azeuil-en-ville-sur-beoux, ayses-palliers, auvilles, usxiain, ouzieres, usclers-sous-pors, urisg, ezles  
+First approach results, rnn3 :  
+reilly, azonnediere, eux-loubard, rectensenomarde, auance, iry-camille-dampeaux, rennay, uvantre, gnanches-debis, risind  
+First approach results, lstm :  
+doualde, menheilles, piernes, ullon, vigniec, udo, zelly, yelon, tailles, indoux  
 
-Second approach results, rnn :
-andes, ren, aint-er-mancy, hille, ran, aint-dr-de-lache, aint, are, an (r=0.17)
-Second approach results, rnn2 :
-urieres, uppe, apille-sur-cotel, urberes, ures, apent-de-berieres, empres, aberrieres, ange, apelle-sur-seine (r=1)
-Second approach results, rnn3 :
-resseux, rentac, aulines-sur-seille, rembardigne, rembricourt, remines, erville, ressin-sur-corce, rembernes, resnes (r=1)
-Second approach results, lstm :
-reilly-les-bains, arcelles-sur-orge, ressey, laisee-sur-mer, eschaux, anchaux, esse, isse-les-bonges, usses-sur-loire, holing (r=0.77)
+Second approach results, rnn :  
+andes, ren, aint-er-mancy, hille, ran, aint-dr-de-lache, aint, are, an (r=0.17)  
+Second approach results, rnn2 :  
+urieres, uppe, apille-sur-cotel, urberes, ures, apent-de-berieres, empres, aberrieres, ange, apelle-sur-seine (r=1)  
+Second approach results, rnn3 :  
+resseux, rentac, aulines-sur-seille, rembardigne, rembricourt, remines, erville, ressin-sur-corce, rembernes, resnes (r=1)  
+Second approach results, lstm :  
+reilly-les-bains, arcelles-sur-orge, ressey, laisee-sur-mer, eschaux, anchaux, esse, isse-les-bonges, usses-sur-loire, holing (r=0.77)  
 
-Comments :
+Comments :  
 To a french speaker, the city names produced by the second approach are much better than the names produced by the second one. City names produced by rnn3 and lstm might even seem more real than the random sample (probably because they are closer to the "average city name", which means our network achieved to learn what a french city name looks like, awesome !).
 
 main.py contains the code calling the functions defined in datacreator.py (which loads and creates the dataset, a bit of data preprocessing), models.py (which creates and compiles the models described above) and namegen.py (which generates "words"/names given a trained RNN)
